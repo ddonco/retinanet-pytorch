@@ -1,0 +1,5 @@
+FROM ddonco/pytorch_retinanet:r1.0.2
+
+COPY . retinanet/
+RUN pip install --no-cache-dir -e retinanet/
+CMD ["bash"]
